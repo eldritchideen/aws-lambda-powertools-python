@@ -3,6 +3,8 @@ title: Tutorial
 description: Powertools introduction
 ---
 
+<!-- markdownlint-disable MD043 -->
+
 This tutorial progressively introduces Lambda Powertools core utilities by using one feature at a time.
 
 ## Requirements

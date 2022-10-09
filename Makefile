@@ -22,10 +22,10 @@ lint: format
 	poetry run flake8 aws_lambda_powertools tests examples
 
 lint-docs:
-	docker run -v ${PWD}:/markdown 06kellyjac/markdownlint-cli "docs"
+	docker run -v ${PWD}:/workdir ghcr.io/igorshubovych/markdownlint-cli:latest "docs"
 
 lint-docs-fix:
-	docker run -v ${PWD}:/markdown 06kellyjac/markdownlint-cli --fix "docs"
+	docker run -v ${PWD}:/workdir ghcr.io/igorshubovych/markdownlint-cli:latest --fix "docs"
 
 test:
 	poetry run pytest -m "not perf" --ignore tests/e2e --cov=aws_lambda_powertools --cov-report=xml

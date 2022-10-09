@@ -3,6 +3,8 @@ title: Middleware factory
 description: Utility
 ---
 
+<!-- markdownlint-disable MD043 -->
+
 Middleware factory provides a decorator factory to create your own middleware to run logic before, and after each Lambda invocation synchronously.
 
 ## Key features
